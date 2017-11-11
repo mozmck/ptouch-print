@@ -4,7 +4,7 @@ sudo: require
 dist: trusty
 
 install:
-    - sudo apt-get -y install libusb-1.0-0-dev autopoint autoconf
+    - sudo apt-get -y install libusb-1.0-0-dev autopoint autoconf libgd-dev
 
 script:
   - autoreconf -i
