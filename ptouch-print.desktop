@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ptouch-print
+Comment=Command line tool to print labels on Brother P-Touch printers
+Exec=ptouch-print
+Icon=ptouch-print
+Terminal=true
+Type=Application
+Categories=Utility;
