@@ -4,7 +4,7 @@ sudo: require
 dist: trusty
 
 install:
-    - sudo apt-get -y install libusb-1.0-0-dev autopoint autotools
+    - sudo apt-get -y install libusb-1.0-0-dev autopoint autoconf
 
 script:
   - autoreconf -i
