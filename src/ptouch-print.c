@@ -82,7 +82,7 @@ int print_img(ptouch_dev ptdev, gdImage *im)
 		printf(_("maximum printing width for this tape is %ipx\n"), tape_width);
 		return -1;
 	}
-	offset=64-(gdImageSY(im)/2);	/* always print centered  */
+	offset=(ptdev->devinfo->max_px/2)-(gdImageSY(im)/2);	/* always print centered  */
 	if (ptouch_rasterstart(ptdev) != 0) {
 		printf(_("ptouch_rasterstart() failed\n"));
 		return -1;

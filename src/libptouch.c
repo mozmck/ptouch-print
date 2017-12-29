@@ -294,9 +294,9 @@ int ptouch_sendraster(ptouch_dev ptdev, uint8_t *data, int len)
 	uint8_t buf[70];
 	int rc;
 
-	if (len > ptdev->devinfo->max_px / 8) {
-		return -1;
-	}
+//	if (len > ptdev->devinfo->max_px / 8) {
+//		return -1;
+//	}
 
 	buf[0]=0x47;
 	if (ptdev->devinfo->flags & FLAG_FORCE_TIFF) {
